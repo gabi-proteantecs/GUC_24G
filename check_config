@@ -1,0 +1,126 @@
+Command Summary:
+  Input Value: 0x2200f2 (2228466)
+  Register Data: 0xf2 (242)
+  Register Address: 0x11 (17)
+  Unit ID: 0x0 (0)
+  ECO Flag: 0
+
+Register Information:
+  Configuration: TCA Configurations
+  Register Name: tca_cfg_1
+
+Field Breakdown:
+  Field Name               Bits    Hex    Dec Description
+  tca_read                  [0]    0x0      0 When set, a read_data command triggers the readout from all Tile Connectivity Agents (TCAs and HBMAs) within the unit that received the command.
+  tca_box_cfg_data       [15:0]   0xf2    242 Provides indirect write access to TCA box registers.
+  tca_measure               [1]    0x1      1 When set, a measure command initiates measurement across all Tile Connectivity Agents (TCAs and HBMAs) within the processing unit (PU) that received the command.
+  tca_read_mode           [3:2]    0x0      0 Specifies the TLV type used when reading the unit. Default: 0 (short readout with max-min values only), 1 (long readout including sum and count).
+  tca_line_duration       [6:4]    0x7      7 Defines the duration for each delay buffer value as 2^(N+5) TCA clock cycles (1 GHz).
+  tca_force_io_sensor_en    [7]    0x1      1 Force-enable bit to activate the sensor before initiating a measurement procedure.
+
+
+Command Summary:
+  Input Value: 0x22009e (2228382)
+  Register Data: 0x9e (158)
+  Register Address: 0x11 (17)
+  Unit ID: 0x0 (0)
+  ECO Flag: 0
+
+Register Information:
+  Configuration: TCA Configurations
+  Register Name: tca_cfg_1
+
+Field Breakdown:
+  Field Name               Bits    Hex    Dec Description
+  tca_read                  [0]    0x0      0 When set, a read_data command triggers the readout from all Tile Connectivity Agents (TCAs and HBMAs) within the unit that received the command.
+  tca_box_cfg_data       [15:0]   0x9e    158 Provides indirect write access to TCA box registers.
+  tca_measure               [1]    0x1      1 When set, a measure command initiates measurement across all Tile Connectivity Agents (TCAs and HBMAs) within the processing unit (PU) that received the command.
+  tca_read_mode           [3:2]    0x3      3 Specifies the TLV type used when reading the unit. Default: 0 (short readout with max-min values only), 1 (long readout including sum and count).
+  tca_line_duration       [6:4]    0x1      1 Defines the duration for each delay buffer value as 2^(N+5) TCA clock cycles (1 GHz).
+  tca_force_io_sensor_en    [7]    0x1      1 Force-enable bit to activate the sensor before initiating a measurement procedure.
+
+
+Command Summary:
+  Input Value: 0x2200fe (2228478)
+  Register Data: 0xfe (254)
+  Register Address: 0x11 (17)
+  Unit ID: 0x0 (0)
+  ECO Flag: 0
+
+Register Information:
+  Configuration: TCA Configurations
+  Register Name: tca_cfg_1
+
+Field Breakdown:
+  Field Name               Bits    Hex    Dec Description
+  tca_read                  [0]    0x0      0 When set, a read_data command triggers the readout from all Tile Connectivity Agents (TCAs and HBMAs) within the unit that received the command.
+  tca_box_cfg_data       [15:0]   0xfe    254 Provides indirect write access to TCA box registers.
+  tca_measure               [1]    0x1      1 When set, a measure command initiates measurement across all Tile Connectivity Agents (TCAs and HBMAs) within the processing unit (PU) that received the command.
+  tca_read_mode           [3:2]    0x3      3 Specifies the TLV type used when reading the unit. Default: 0 (short readout with max-min values only), 1 (long readout including sum and count).
+  tca_line_duration       [6:4]    0x7      7 Defines the duration for each delay buffer value as 2^(N+5) TCA clock cycles (1 GHz).
+  tca_force_io_sensor_en    [7]    0x1      1 Force-enable bit to activate the sensor before initiating a measurement procedure.
+
+
+Command Summary:
+  Input Value: 0x2200f2 (2228466)
+  Register Data: 0xf2 (242)
+  Register Address: 0x11 (17)
+  Unit ID: 0x0 (0)
+  ECO Flag: 0
+
+Register Information:
+  Configuration: TCA Configurations
+  Register Name: tca_cfg_1
+
+Field Breakdown:
+  Field Name               Bits    Hex    Dec Description
+  tca_read                  [0]    0x0      0 When set, a read_data command triggers the readout from all Tile Connectivity Agents (TCAs and HBMAs) within the unit that received the command.
+  tca_box_cfg_data       [15:0]   0xf2    242 Provides indirect write access to TCA box registers.
+  tca_measure               [1]    0x1      1 When set, a measure command initiates measurement across all Tile Connectivity Agents (TCAs and HBMAs) within the processing unit (PU) that received the command.
+  tca_read_mode           [3:2]    0x0      0 Specifies the TLV type used when reading the unit. Default: 0 (short readout with max-min values only), 1 (long readout including sum and count).
+  tca_line_duration       [6:4]    0x7      7 Defines the duration for each delay buffer value as 2^(N+5) TCA clock cycles (1 GHz).
+  tca_force_io_sensor_en    [7]    0x1      1 Force-enable bit to activate the sensor before initiating a measurement procedure.
+
+
+Command Summary:
+  Input Value: 0x220cf2 (2231538)
+  Register Data: 0xcf2 (3314)
+  Register Address: 0x11 (17)
+  Unit ID: 0x0 (0)
+  ECO Flag: 0
+
+Register Information:
+  Configuration: TCA Configurations
+  Register Name: tca_cfg_1
+
+Field Breakdown:
+  Field Name               Bits    Hex    Dec Description
+  tca_read                  [0]    0x0      0 When set, a read_data command triggers the readout from all Tile Connectivity Agents (TCAs and HBMAs) within the unit that received the command.
+  tca_box_cfg_data       [15:0]  0xcf2   3314 Provides indirect write access to TCA box registers.
+  tca_measure               [1]    0x1      1 When set, a measure command initiates measurement across all Tile Connectivity Agents (TCAs and HBMAs) within the processing unit (PU) that received the command.
+  tca_read_mode           [3:2]    0x0      0 Specifies the TLV type used when reading the unit. Default: 0 (short readout with max-min values only), 1 (long readout including sum and count).
+  tca_line_duration       [6:4]    0x7      7 Defines the duration for each delay buffer value as 2^(N+5) TCA clock cycles (1 GHz).
+  tca_force_io_sensor_en    [7]    0x1      1 Force-enable bit to activate the sensor before initiating a measurement procedure.
+
+
+Command Summary:
+  Input Value: 0x22861e (2262558)
+  Register Data: 0x861e (34334)
+  Register Address: 0x11 (17)
+  Unit ID: 0x0 (0)
+  ECO Flag: 0
+
+Register Information:
+  Configuration: TCA Configurations
+  Register Name: tca_cfg_1
+
+Field Breakdown:
+  Field Name               Bits    Hex    Dec Description
+  tca_read                  [0]    0x0      0 When set, a read_data command triggers the readout from all Tile Connectivity Agents (TCAs and HBMAs) within the unit that received the command.
+  tca_box_cfg_data       [15:0] 0x861e  34334 Provides indirect write access to TCA box registers.
+  tca_measure               [1]    0x1      1 When set, a measure command initiates measurement across all Tile Connectivity Agents (TCAs and HBMAs) within the processing unit (PU) that received the command.
+  tca_read_mode           [3:2]    0x3      3 Specifies the TLV type used when reading the unit. Default: 0 (short readout with max-min values only), 1 (long readout including sum and count).
+  tca_line_duration       [6:4]    0x1      1 Defines the duration for each delay buffer value as 2^(N+5) TCA clock cycles (1 GHz).
+  tca_force_io_sensor_en    [7]    0x0      0 Force-enable bit to activate the sensor before initiating a measurement procedure.
+
+

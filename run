@@ -147,6 +147,7 @@ PRTN_INFO (2025-10-12 10:20:57.427561): Writing to TCA unit config_reg 29 val = 
 PRTN_INFO (2025-10-12 10:20:57.459249): Writing to TCA unit config_reg 29 val = 0x7a000c
 PRTN_INFO (2025-10-12 10:20:57.475102): Writing to TCA unit config_reg 29 val = 0xba000c
 PRTN_INFO (2025-10-12 10:20:57.490860): Writing to TCA unit config_reg 29 val = 0xfa000c
+
 PRTN_INFO (2025-10-12 10:20:57.506914): Writing to TCA unit config_reg 10 val = 0x141bff
 PRTN_INFO (2025-10-12 10:20:57.522741): Writing to TCA unit config_reg 17 val = 0x2200f0
 PRTN_INFO (2025-10-12 10:20:57.554259): Writing to TCA unit config_reg 10 val = 0x140fff
