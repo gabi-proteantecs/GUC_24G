@@ -1,0 +1,364 @@
+< Auto Test Condition >
+Test Item : proteanTecs_Test
+Test Temperature :  25 Degree
+PVT Corner : TT_
+Test DataRate : 24
+Test Mode : M4_D0V_D1V_mode
+Hardware Training : Enable
+Chip Reset : Hardware Reset (GPIO_Reset)
+BIST Test Loop : 1 / BIST Test Time : 1
+Excel Register Setup Sheet Seaunece Name : 24G
+FileName : PCS_Check
+Note : None
+
+GPIO Reset Test Chip Reset
+
+all EHOST APB from I2C enable
+
+< Test Result Summary >
+ EHSOT ABP Enable : PASS
+AutoTest Tools Version : GUC_24G
+
+< Start Test >
+Load training/bist register value in excel
+Training 1D Eye Diagram
+
+PASS
+
+all EHOST APB from I2C enable
+[Sequence] Check PLL Status
+die0 groupH : vco = 0x10 , lol(0x2154) = 0x0 , lol(0x2150) = 0x1 , PLL Lock Pass
+die0 groupV : vco = 0x10 , lol(0x2154) = 0x0 , lol(0x2150) = 0x1 , PLL Lock Pass
+die1 groupH : vco = 0x11 , lol(0x2154) = 0x0 , lol(0x2150) = 0x1 , PLL Lock Pass
+die1 groupV : vco = 0x11 , lol(0x2154) = 0x0 , lol(0x2150) = 0x1 , PLL Lock Pass
+die2 groupH : vco = 0x10 , lol(0x2154) = 0x0 , lol(0x2150) = 0x1 , PLL Lock Pass
+die2 groupV : vco = 0x10 , lol(0x2154) = 0x0 , lol(0x2150) = 0x1 , PLL Lock Pass
+Start Test M4_D0V_D1V_mode
+[Sequence] Run Hardware_Training_Normal_Path
+Init Slice : TX Slice=User Define / RX Slice=User Define (Test Die : Only Force Die0 and Die1)
+( rg_pmaa_MODE_8 Die0 V ) Indirect Read , offset=0x2000 [0] , Register Value=0x0
+( rg_pmaa_MODE_8 Die1 V ) Indirect Read , offset=0x2000 [0] , Register Value=0x0
+( PLL Status Die0 V ) Indirect Read , offset=0x2114 [14:0] , Register Value=0x0078
+( PLL Status Die1 V ) Indirect Read , offset=0x2114 [14:0] , Register Value=0x0078
+( rs1080_m0_state_n Die0 V ) Indirect Read , offset=0x1080 [7:0] , Register Value=0x17 Slice Number=0
+( rs1080_m0_state_n Die0 V ) Indirect Read , offset=0x11080 [7:0] , Register Value=0x17 Slice Number=1
+( rs1080_m0_state_n Die0 V ) Indirect Read , offset=0x21080 [7:0] , Register Value=0x17 Slice Number=2
+( rs1080_m0_state_n Die0 V ) Indirect Read , offset=0x31080 [7:0] , Register Value=0x17 Slice Number=3
+( rs1080_m0_state_n Die1 V ) Indirect Read , offset=0x31080 [7:0] , Register Value=0x17 Slice Number=3
+( rs1080_m0_state_n Die1 V ) Indirect Read , offset=0x21080 [7:0] , Register Value=0x17 Slice Number=2
+( rs1080_m0_state_n Die1 V ) Indirect Read , offset=0x11080 [7:0] , Register Value=0x17 Slice Number=1
+( rs1080_m0_state_n Die1 V ) Indirect Read , offset=0x1080 [7:0] , Register Value=0x17 Slice Number=0
+( rs1080_m0_state_n1 Die0 V ) Indirect Read , offset=0x1080 [23:16] , Register Value=0x16 Slice Number=0
+( rs1080_m0_state_n1 Die0 V ) Indirect Read , offset=0x11080 [23:16] , Register Value=0x16 Slice Number=1
+( rs1080_m0_state_n1 Die0 V ) Indirect Read , offset=0x21080 [23:16] , Register Value=0x16 Slice Number=2
+( rs1080_m0_state_n1 Die0 V ) Indirect Read , offset=0x31080 [23:16] , Register Value=0x16 Slice Number=3
+( rs1080_m0_state_n1 Die1 V ) Indirect Read , offset=0x31080 [23:16] , Register Value=0x16 Slice Number=3
+( rs1080_m0_state_n1 Die1 V ) Indirect Read , offset=0x21080 [23:16] , Register Value=0x16 Slice Number=2
+( rs1080_m0_state_n1 Die1 V ) Indirect Read , offset=0x11080 [23:16] , Register Value=0x16 Slice Number=1
+( rs1080_m0_state_n1 Die1 V ) Indirect Read , offset=0x1080 [23:16] , Register Value=0x16 Slice Number=0
+( rs1080_m0_state_n2 Die0 V ) Indirect Read , offset=0x1080 [31:24] , Register Value=0x13 Slice Number=0
+( rs1080_m0_state_n2 Die0 V ) Indirect Read , offset=0x11080 [31:24] , Register Value=0x13 Slice Number=1
+( rs1080_m0_state_n2 Die0 V ) Indirect Read , offset=0x21080 [31:24] , Register Value=0x13 Slice Number=2
+( rs1080_m0_state_n2 Die0 V ) Indirect Read , offset=0x31080 [31:24] , Register Value=0x13 Slice Number=3
+( rs1080_m0_state_n2 Die1 V ) Indirect Read , offset=0x31080 [31:24] , Register Value=0x13 Slice Number=3
+( rs1080_m0_state_n2 Die1 V ) Indirect Read , offset=0x21080 [31:24] , Register Value=0x13 Slice Number=2
+( rs1080_m0_state_n2 Die1 V ) Indirect Read , offset=0x11080 [31:24] , Register Value=0x13 Slice Number=1
+( rs1080_m0_state_n2 Die1 V ) Indirect Read , offset=0x1080 [31:24] , Register Value=0x13 Slice Number=0
+Test Tempature=25 Degree_DataRate=24 Gb/s_Test Mode=M4_D0V_D1V_mode
+Eye Width Specification : 16 < Test Value < 32 , PI Range=32
+Eye Height Specification : 15 < Test Value < 64 , PI Range=64
+Test Result : Eye Size Value
++-------+-------+-----+-----+-----+-----+-----+------+-----+-----+-----+-----+------+---------------+------+
+|  Die  | Slice | T_F | w_l | w_r | w_c | w_s | W(%) | v_l | v_h | v_c | v_s | H(%) | MBT_Pass(HEX) | Note |
++-------+-------+-----+-----+-----+-----+-----+------+-----+-----+-----+-----+------+---------------+------+
+| Die0V |   0   |  NA |  25 |  45 |  35 |  21 | 65.6 |  12 |  59 |  35 |  48 | 75.0 |      0xdf     | ///  |
+| Die0V |   1   |  NA |  23 |  46 |  34 |  24 | 75.0 |  12 |  57 |  34 |  46 | 71.8 |      0xdf     | ///  |
+| Die0V |   2   |  NA |  24 |  46 |  35 |  23 | 71.8 |  6  |  59 |  32 |  54 | 84.3 |      0xdf     | ///  |
+| Die0V |   3   |  NA |  26 |  46 |  36 |  21 | 65.6 |  15 |  58 |  36 |  44 | 68.7 |      0xdf     | ///  |
++-------+-------+-----+-----+-----+-----+-----+------+-----+-----+-----+-----+------+---------------+------+
+Read Register : Chip dvs / dck / cck / rx_pi
++-------+-------+-----+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|  Die  | Slice | T_F |   dvs_pi    | dvs_pi_code |  dck_phase  |  dck_code_i |  cck_phase  |  cck_code_i |    rx_pi    |  rx_pi_code |
++-------+-------+-----+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+| Die0V |   0   |  NA |     0x1     |     0x0e    |     0x1     |     0x07    |     0x1     |     0x18    |     0x1     |     0x35    |
+| Die0V |   1   |  NA |     0x1     |     0x40    |     0x1     |     0x07    |     0x1     |     0x18    |     0x1     |     0x37    |
+| Die0V |   2   |  NA |     0x1     |     0x72    |     0x1     |     0x10    |     0x1     |     0x18    |     0x1     |     0x36    |
+| Die0V |   3   |  NA |     0x1     |     0x08    |     0x1     |     0x0e    |     0x1     |     0x17    |     0x1     |     0x34    |
++-------+-------+-----+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+Eye Width Specification : 16 < Test Value < 32 , PI Range=32
+Eye Height Specification : 15 < Test Value < 64 , PI Range=64
+Test Result : Eye Size Value
++-------+-------+-----+-----+-----+-----+-----+------+-----+-----+-----+-----+------+---------------+------+
+|  Die  | Slice | T_F | w_l | w_r | w_c | w_s | W(%) | v_l | v_h | v_c | v_s | H(%) | MBT_Pass(HEX) | Note |
++-------+-------+-----+-----+-----+-----+-----+------+-----+-----+-----+-----+------+---------------+------+
+| Die1V |   3   |  NA |  24 |  45 |  34 |  22 | 68.7 |  12 |  56 |  34 |  45 | 70.3 |      0xdf     | ///  |
+| Die1V |   2   |  NA |  22 |  44 |  33 |  23 | 71.8 |  12 |  57 |  34 |  46 | 71.8 |      0xdf     | ///  |
+| Die1V |   1   |  NA |  22 |  45 |  33 |  24 | 75.0 |  13 |  57 |  35 |  45 | 70.3 |      0xdf     | ///  |
+| Die1V |   0   |  NA |  23 |  45 |  34 |  23 | 71.8 |  15 |  54 |  34 |  40 | 62.5 |      0xdf     | ///  |
++-------+-------+-----+-----+-----+-----+-----+------+-----+-----+-----+-----+------+---------------+------+
+Read Register : Chip dvs / dck / cck / rx_pi
++-------+-------+-----+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|  Die  | Slice | T_F |   dvs_pi    | dvs_pi_code |  dck_phase  |  dck_code_i |  cck_phase  |  cck_code_i |    rx_pi    |  rx_pi_code |
++-------+-------+-----+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+| Die1V |   3   |  NA |     0x1     |     0x1a    |     0x1     |     0x11    |     0x1     |     0x19    |     0x1     |     0x37    |
+| Die1V |   2   |  NA |     0x1     |     0x05    |     0x1     |     0x06    |     0x1     |     0x1a    |     0x1     |     0x34    |
+| Die1V |   1   |  NA |     0x1     |     0x5a    |     0x1     |     0x10    |     0x1     |     0x1a    |     0x1     |     0x31    |
+| Die1V |   0   |  NA |     0x1     |     0x1f    |     0x1     |     0x06    |     0x1     |     0x18    |     0x1     |     0x33    |
++-------+-------+-----+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+Center Vref Value
+(HW) Die0V_Slice[0, 1, 2, 3]_Center Vref Value = [['0x23', '0x22', '0x20', '0x24']]
+(HW) Die1V_Slice[3, 2, 1, 0]_Center Vref Value = [['0x22', '0x22', '0x23', '0x22']]
+[Sequence] Run PCS BIST Check Normal_Path
+Init Slice : TX Slice=[0, 1, 2, 3] / RX Slice=[3, 2, 1, 0]
+Function Check : RX_PCS_ERR_INJECT : Enable
+RX_PCS_ERR_INJECT for die0 V S#65536 = ['0x0', '0x0', '0x0', '0x0']
+RX_PCS_ERR_INJECT for die1 V S#65536 = ['0x0', '0x0', '0x0', '0x0']
+Init Slice : TX Slice=[0, 1, 2, 3] / RX Slice=[3, 2, 1, 0]
+PCS BIST Check Normal Path Test Result :
+Die0V Slice0, Error Count=1
+Die1V Slice3, Error Count=1
+Die0V Slice1, Error Count=1
+Die1V Slice2, Error Count=1
+Die0V Slice2, Error Count=1
+Die1V Slice1, Error Count=1
+Die0V Slice3, Error Count=1
+Die1V Slice0, Error Count=1
+Function Check : RX_PCS_ERR_INJECT Result : PASS
+PCS BIST Time : Check Loop 1/1 , Time 1s
+Init Slice : TX Slice=[0, 1, 2, 3] / RX Slice=[3, 2, 1, 0]
+PCS BIST Check Normal Path Test Result :
+Die0V Slice0, Error Count=0
+Die1V Slice3, Error Count=0
+Die0V Slice1, Error Count=0
+Die1V Slice2, Error Count=0
+Die0V Slice2, Error Count=0
+Die1V Slice1, Error Count=0
+Die0V Slice3, Error Count=0
+Die1V Slice0, Error Count=0
+Working on:  {'die': 0, 'group': 2}
+Enable TCA clock to Block Controllers 
+
+TCA enable reg before write to enable bits =  0x00000000
+TCA enable reg after write to enable bits=  0x0000000f
+After enabling TCA clock to Block Controllers 
+
+PRTN_INFO (2025-10-12 10:46:28.978251): In prtn_global_config
+PRTN_INFO (2025-10-12 10:46:29.071631): Writing to TCA unit config_reg 29 val = 0x3a000c
+PRTN_INFO (2025-10-12 10:46:29.092384): Writing to TCA unit config_reg 29 val = 0x7a000c
+PRTN_INFO (2025-10-12 10:46:29.112659): Writing to TCA unit config_reg 29 val = 0xba000c
+PRTN_INFO (2025-10-12 10:46:29.125308): Writing to TCA unit config_reg 29 val = 0xfa000c
+
+
+
+PRTN_INFO (2025-10-12 10:46:29.150609): Writing to TCA unit config_reg 10 val = 0x141bff
+PRTN_INFO (2025-10-12 10:46:29.166635): Writing to TCA unit config_reg 17 val = 0x2200f2
+
+PRTN_INFO (2025-10-12 10:46:29.182623): Writing to TCA unit config_reg 10 val = 0x140fff
+PRTN_INFO (2025-10-12 10:46:29.198347): Writing to TCA unit config_reg 17 val = 0x22009e
+
+PRTN_INFO (2025-10-12 10:46:29.214582): Writing to TCA unit config_reg 10 val = 0x1417ff
+PRTN_INFO (2025-10-12 10:46:29.229894): Writing to TCA unit config_reg 17 val = 0x2200fe
+
+PRTN_INFO (2025-10-12 10:46:29.261872): Writing to TCA unit config_reg 10 val = 0x140bff
+PRTN_INFO (2025-10-12 10:46:29.277658): Writing to TCA unit config_reg 17 val = 0x2200f0
+
+
+
+PRTN_INFO (2025-10-12 10:46:29.293604): Writing to TCA unit config_reg 10 val = 0x1413ff
+PRTN_INFO (2025-10-12 10:46:29.314514): Writing to TCA unit config_reg 17 val = 0x220cf0
+
+PRTN_INFO (2025-10-12 10:46:29.324040): Writing to TCA unit config_reg 10 val = 0x142bff
+PRTN_INFO (2025-10-12 10:46:29.339700): Writing to TCA unit config_reg 17 val = 0x22861e
+
+PRTN_INFO (2025-10-12 10:46:29.371305): Writing to TCA unit config_reg 10 val = 0x541bff
+PRTN_INFO (2025-10-12 10:46:29.392067): Writing to TCA unit config_reg 17 val = 0x6200f2
+
+PRTN_INFO (2025-10-12 10:46:29.410926): Writing to TCA unit config_reg 10 val = 0x540fff
+PRTN_INFO (2025-10-12 10:46:29.418434): Writing to TCA unit config_reg 17 val = 0x62009e
+
+
+PRTN_INFO (2025-10-12 10:46:29.434399): Writing to TCA unit config_reg 10 val = 0x5417ff
+PRTN_INFO (2025-10-12 10:46:29.465867): Writing to TCA unit config_reg 17 val = 0x6200fe
+PRTN_INFO (2025-10-12 10:46:29.487655): Writing to TCA unit config_reg 10 val = 0x540bff
+PRTN_INFO (2025-10-12 10:46:29.497592): Writing to TCA unit config_reg 17 val = 0x6200f0
+PRTN_INFO (2025-10-12 10:46:29.525342): Writing to TCA unit config_reg 10 val = 0x5413ff
+PRTN_INFO (2025-10-12 10:46:29.540296): Writing to TCA unit config_reg 17 val = 0x620cf0
+PRTN_INFO (2025-10-12 10:46:29.562800): Writing to TCA unit config_reg 10 val = 0x542bff
+PRTN_INFO (2025-10-12 10:46:29.582703): Writing to TCA unit config_reg 17 val = 0x62861e
+PRTN_INFO (2025-10-12 10:46:29.592617): Writing to TCA unit config_reg 10 val = 0x941bff
+PRTN_INFO (2025-10-12 10:46:29.614583): Writing to TCA unit config_reg 17 val = 0xa200f2
+PRTN_INFO (2025-10-12 10:46:29.639855): Writing to TCA unit config_reg 10 val = 0x940fff
+PRTN_INFO (2025-10-12 10:46:29.655951): Writing to TCA unit config_reg 17 val = 0xa2009e
+PRTN_INFO (2025-10-12 10:46:29.677731): Writing to TCA unit config_reg 10 val = 0x9417ff
+PRTN_INFO (2025-10-12 10:46:29.687324): Writing to TCA unit config_reg 17 val = 0xa200fe
+PRTN_INFO (2025-10-12 10:46:29.714466): Writing to TCA unit config_reg 10 val = 0x940bff
+PRTN_INFO (2025-10-12 10:46:29.719076): Writing to TCA unit config_reg 17 val = 0xa200f0
+PRTN_INFO (2025-10-12 10:46:29.750987): Writing to TCA unit config_reg 10 val = 0x9413ff
+PRTN_INFO (2025-10-12 10:46:29.767056): Writing to TCA unit config_reg 17 val = 0xa20cf0
+PRTN_INFO (2025-10-12 10:46:29.782557): Writing to TCA unit config_reg 10 val = 0x942bff
+PRTN_INFO (2025-10-12 10:46:29.802275): Writing to TCA unit config_reg 17 val = 0xa2861e
+PRTN_INFO (2025-10-12 10:46:29.822406): Writing to TCA unit config_reg 10 val = 0xd41bff
+PRTN_INFO (2025-10-12 10:46:29.845012): Writing to TCA unit config_reg 17 val = 0xe200f2
+PRTN_INFO (2025-10-12 10:46:29.861906): Writing to TCA unit config_reg 10 val = 0xd40fff
+PRTN_INFO (2025-10-12 10:46:29.877793): Writing to TCA unit config_reg 17 val = 0xe2009e
+PRTN_INFO (2025-10-12 10:46:29.895534): Writing to TCA unit config_reg 10 val = 0xd417ff
+PRTN_INFO (2025-10-12 10:46:29.914762): Writing to TCA unit config_reg 17 val = 0xe200fe
+PRTN_INFO (2025-10-12 10:46:29.932652): Writing to TCA unit config_reg 10 val = 0xd40bff
+PRTN_INFO (2025-10-12 10:46:29.956327): Writing to TCA unit config_reg 17 val = 0xe200f0
+PRTN_INFO (2025-10-12 10:46:29.972107): Writing to TCA unit config_reg 10 val = 0xd413ff
+PRTN_INFO (2025-10-12 10:46:29.992340): Writing to TCA unit config_reg 17 val = 0xe20cf0
+PRTN_INFO (2025-10-12 10:46:30.003668): Writing to TCA unit config_reg 10 val = 0xd42bff
+PRTN_INFO (2025-10-12 10:46:30.019443): Writing to TCA unit config_reg 17 val = 0xe2861e
+Became_busy before Start :  0x00000000
+PRTN_INFO (2025-10-12 10:46:30.305782): Stop TCA measure
+PRTN_INFO (2025-10-12 10:46:30.321830): Writing to TCA unit config_reg 23 val = 0x2effff
+PRTN_INFO (2025-10-12 10:46:30.330912): Stop TCA measure
+PRTN_INFO (2025-10-12 10:46:30.337460): Writing to TCA unit config_reg 23 val = 0x6effff
+PRTN_INFO (2025-10-12 10:46:30.353386): Stop TCA measure
+PRTN_INFO (2025-10-12 10:46:30.369316): Writing to TCA unit config_reg 23 val = 0xaeffff
+PRTN_INFO (2025-10-12 10:46:30.374426): Stop TCA measure
+PRTN_INFO (2025-10-12 10:46:30.392187): Writing to TCA unit config_reg 23 val = 0xeeffff
+PRTN_INFO (2025-10-12 10:46:30.565898): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:31.189495): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:31.835665): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:32.457793): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:33.174518): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:33.882498): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:34.615738): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:35.345479): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:36.058720): Expected and got 13 entries in fifo
+PRTN_INFO (2025-10-12 10:46:36.447515): TCA_Naknik_params:die,slave,top_id,block_idx,cfg,EW,idx_iter,readout
+PRTN_INFO (2025-10-12 10:46:36.447515): TCA_Naknik_output:0,3,0,0,30,1,0,b604000c1e400ea8729c000000040000000800300600400c83c0c0000c0ea8729c24028002a0050158377e043c3c43cfde7803d33e9fc034592ef47d9b64fffba70caffeee00e004bb77edffeebd87bffbab2e6ffeebde7bffbaf68dffeeac90fffbb77f0ffeeddfc7ffbab3f5ffeee003801bb37ecffeeddfc3ffbaf5f1ffeeac71bffbb800e006ecdfb7ffbaf706ffeebd96bffbb800e006eddfcbffbb77f0ffeee4de164baf757ffeeddfbfffbb5cb5836ecdf7fffbb37b6ffeecdf2fffbab3e2ffeeddfc7ffbb802a00eeddfcbffbb37d7ffeeddfc3ffbaf46cffeecdfb7ffbb891429aecdfbbffbb88c0282eddfcbffbb8b7c34aecdee7ffbaf3c6ffed9b397ffbb77efffeebdc6fffbaf722ffeebd783ffbaf3fcffeebd693ffbaf73cffeee03100ebab2efffeecdf7fffb66ea0ffeebd37bffbb77eaffeecdbffffbaf633ffeeddfbbffbb37c6ffe0f00000083c0000020f00000083c0000020f00000083c0000020f0000008ba5de8e1e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000010780000041e0000010780000041e0000018780000041e00000118598c543c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f0000008c80b3e01a20ec18c2c04bffff3803e23d
+PRTN_INFO (2025-10-12 10:46:36.672731): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:37.325762): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:37.915809): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:38.562406): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:39.267916): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:40.002448): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:40.665211): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:41.367010): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:42.134874): Expected and got 13 entries in fifo
+PRTN_INFO (2025-10-12 10:46:42.473742): TCA_Naknik_params:die,slave,top_id,block_idx,cfg,EW,idx_iter,readout
+PRTN_INFO (2025-10-12 10:46:42.474744): TCA_Naknik_output:0,3,0,1,30,1,0,b604000c1e400ea8729c000000040000000800300600400c83c0c0000c0ea8729c24028012a0050158377e043c3c43cfde7803d33e9fc034592ef47ebcfd7ffbb77f1ffeeedfcbffbaf38affeebd35fffbab471ffeecdec3ffbaf564ffeebd33bffbaf483ffeebda87ffbb37d0ffeeddfbfffbb3727ffeebcfebffbab143ffeebd06bffbb37eaffeecdaf3ffbb377effeecdf9fffbaf48effeecdaa3ffbaf2d6ffeecdc43ffbb37d9ffeebdc13ffbaf54fffeeddfafffbab298ffedac027ffbb379affeeddfabffb66c68ffeecdcf3ffbaaed6ffed9b17fffbab209ffeecd607ffb6adb4ffeecde57ffb22a6effeeaccafffb66d1effeebd3ffffb6aec2ffec8a1dbffbb37c4ffeeddfb3ffbb36a9ffeecd84fffbb366dffeebcfabffbaf5cdffeeac3fbffbb36f9ffeebcddfffb62c6dffec7a457ffbab398ffed9b20fffb6ae6bffeebcd7fffbb3687ffe0f00000083c0000020f00000083c0000020f00000083c0000020f0000008ba5de8e1e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000010780000041e0000010780000041e0000018780000041e00000118598c543c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f0000008c80b3e01a20e018c2c04bffff76b1d400
+PRTN_INFO (2025-10-12 10:46:42.688060): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:43.337526): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:43.959491): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:44.586133): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:45.208227): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:45.880744): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:46.535919): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:47.169856): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:47.905489): Expected and got 13 entries in fifo
+PRTN_INFO (2025-10-12 10:46:48.285326): TCA_Naknik_params:die,slave,top_id,block_idx,cfg,EW,idx_iter,readout
+PRTN_INFO (2025-10-12 10:46:48.285326): TCA_Naknik_output:0,3,0,2,30,1,0,b604000c1e400ea8729c000000040000000800300600400c83c0c0000c0ea8729c24028022a0050158377e043c3c43cfde7803d33e9fc034592ef47ebc85fffbab1b9ffeecd24bffbaf430ffeebcf67ffb66d69ffec9af33ffb66b61ffec8a38bffbb37b7ffeecdf37ffb1e8c8ffeecd94bffbb77f1ffeebd377ffbab378ffeecddffffb6ae4fffeecd40fffbaf2c5ffedabfbfffbaf4beffeebcc23ffbaf58bffec8a37bffb6aff0ffeecdf57ffba707dffedac02fffbaaff2ffedabee7ffbaf556ffeebcdf7ffb6aed9ffedab7ebffbab16dffedaba0fffb26be9ffec9a0abffbaf3f2ffedabf6bffbaf5e0ffeeacbf3ffb6ae58ffedac3afffbaf372ffedabe8fffbaf511ffec8aa5fffb66cefffec8aabbffb6af3cffeebce0bffbb3776ffedab9a7ffbb379fffec9af67ffbb3656ffeeac1d3ffb66bdcffedab7ebffb26a29ffed9afebffb6af83ffe0f00000083c0000020f00000083c0000020f00000083c0000020f0000008ba5de8fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00fdc007003f7001c00e1e0000010780000041e000001078000005dc0070038780000041e00000118598c543c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f0000008c80b3e01a20fc18c2c04bffff5907e0fe
+PRTN_INFO (2025-10-12 10:46:48.485185): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:49.117444): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:49.720900): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:50.348648): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:51.030730): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:51.747859): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:52.420631): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:53.122046): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:53.856909): Expected and got 13 entries in fifo
+PRTN_INFO (2025-10-12 10:46:54.236679): TCA_Naknik_params:die,slave,top_id,block_idx,cfg,EW,idx_iter,readout
+PRTN_INFO (2025-10-12 10:46:54.237201): TCA_Naknik_output:0,3,0,3,30,1,0,b604000c1e400ea8729c000000040000000800300600400c83c0c0000c0ea8729c24028032a0050158377e043c3c43cfde7803d33e9fc034592ef47dab89bffb6f002ffeebd6ffffb6ada0ffeeac1e3ffb26aa1ffed8ac53ffb66c85ffeeac0d7ffbb77ecffedbc1ebffbaf5a4ffeecd97bffb6ac93ffeecdd6fffb26b85ffeebcfbbffb6af54ffedabcffffbab05affed9b20fffb6ae27ffeeabd23ffbb3536ffeecd2d7ffbaf28cffedbc077ffb66dc0ffed9aecfffbb35a5ffeebce4bffbb37a7ffed9b3c7ffbb36f7ffec9a9e7ffbb77edffeebc88fffbb37b8ffec9ae5bffbb34ffffeeddf3bffbaf248ffed9b0bfffb6af01ffed9b2efffbb939459ab792dfffbaaee8ffeeac93bffbab0d2ffeeac25bffbaf2a0ffeeac223ffbaf54cffeebcf07ffb66bd4ffedab357ffbaf4f7ffedabbc7ffb26a70ffed9b257ffb6acdcffec9a8a3ffbaf44dffe0f00000083c0000020f00000083c0000020f00000083c0000020f0000008ba5de8e1e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000018780000061e0000010780000041e0000010780000041e0000018780000041e00000118598c543c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f0000008c80b3e01a20bc1882c04bffff10f4d9c4
+Became_busy before Start :  0x0000000f
+PRTN_INFO (2025-10-12 10:46:54.584961): Stop TCA measure
+PRTN_INFO (2025-10-12 10:46:54.600734): Writing to TCA unit config_reg 23 val = 0x2effff
+PRTN_INFO (2025-10-12 10:46:54.600734): Stop TCA measure
+PRTN_INFO (2025-10-12 10:46:54.632423): Writing to TCA unit config_reg 23 val = 0x6effff
+PRTN_INFO (2025-10-12 10:46:54.632423): Stop TCA measure
+PRTN_INFO (2025-10-12 10:46:54.648261): Writing to TCA unit config_reg 23 val = 0xaeffff
+PRTN_INFO (2025-10-12 10:46:54.648261): Stop TCA measure
+PRTN_INFO (2025-10-12 10:46:54.679949): Writing to TCA unit config_reg 23 val = 0xeeffff
+PRTN_INFO (2025-10-12 10:46:54.848521): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:55.442997): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:56.066447): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:56.699758): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:57.408083): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:58.099967): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:58.808213): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:46:59.509893): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:00.212189): Expected and got 13 entries in fifo
+PRTN_INFO (2025-10-12 10:47:00.572146): TCA_Naknik_params:die,slave,top_id,block_idx,cfg,EW,idx_iter,readout
+PRTN_INFO (2025-10-12 10:47:00.572146): TCA_Naknik_output:0,3,0,0,30,1,1,b604000c1e400ea8729c000000040000000800300600400c83c0c0000c0ea8729c24028002a0050158377e043c3c43cfde7803d33e9fc034592ef47d7b017ff35ed85ffcecd3a7ffbaf6edffee9cf23ff3a30aeffce9d44fff3a3354ffce7c067ff3af7aaffeeade53ffba324fffcecda17ffbab781ffeebdd3fffba7409ffce7be0bff3b36e0ffeeade77ffba7577ffce9d01fff3b3722ffeeadeb3ffbab6e7ffeecd203ffba73ecffcebdd67ffbaf5f6ffee9da8fff3a7588ffceadd97ff3a3117ffcebd877ffbb3613ffeebda67ffba76ecffeeade4fffba31caffceadd87ffbaf48bffeeade1bffbaf4bfffeebda93ffbaf585ffeeadc67ff3a725dffcd6ae6bff3af6ddffee9d48fff3a74d0ffce9d063ff3a737dffce9d29fff3a74f3ffcecd253ffba3172ffceade13ffb5ecbfffce8cd07ff3ab799ffee9d6d3ff3a7423ffceade63ffbab786ffc0f00000083c0000020f00000083c0000020f00000083c0000020f0000008ba5de8e1e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000010780000041e0000010780000041e0000008780000041e00000118598c543c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f0000008c80b3e01a20d81cc2c04bffff3ab93816
+PRTN_INFO (2025-10-12 10:47:00.798146): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:01.420771): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:02.066515): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:02.657583): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:03.355732): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:04.017877): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:04.744033): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:05.397627): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:06.166769): Expected and got 13 entries in fifo
+PRTN_INFO (2025-10-12 10:47:06.535110): TCA_Naknik_params:die,slave,top_id,block_idx,cfg,EW,idx_iter,readout
+PRTN_INFO (2025-10-12 10:47:06.535110): TCA_Naknik_output:0,3,0,1,30,1,1,b604000c1e400ea8729c000000040000000800300600400c83c0c0000c0ea8729c24028012a0050158377e043c3c43cfde7803d33e9fc034592ef47e9cef3ff3b37eeffeecdfb3ffba7389ffce9cd4bff3a748dffceade6fff3a73ccffcead2cfff3ab4d1ffcead48bff3af7d3ffeebdf93ffbaf759ffcead10fff3a71dcffceacc27ff3af7edffeeadc73ff3ab744ffeebdf3bffbab333ffcead88bff3a72adffcead6b7ff3ab7a8ffeead68fff3ab4f8ffcebdfbbffba718effcd8c213ff3ab7d2ffeecdfb3ffb62cedffceade5bffba6f97ffcd8b3efff3a3141ffcead8abff362de4ffcebde37ff31ea93ffce9c9f7ff35ed12ffcead6dbff362d76ffcc6a4d3ff3af7a4ffeebdf9fffbab73bffcead913ff3ab6ccffcead373ff3a74f9ffce9c19bff3af794ffeeace5fff35ead6ffcc69eafff3a32dbffcd7aee3ff366ee8ffcead077ff3af737ffc0f00000083c0000020f00000083c0000020f00000083c0000020f0000008ba5de8e1e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000010780000041e0000010780000041e0000008780000041e00000118598c543c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f0000008c80b3e01a20b81cc2c04bffff866e33f5
+PRTN_INFO (2025-10-12 10:47:06.753273): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:07.390579): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:07.986509): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:08.632175): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:09.377538): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:10.088981): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:10.784009): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:11.488061): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:12.204508): Expected and got 13 entries in fifo
+PRTN_INFO (2025-10-12 10:47:12.544264): TCA_Naknik_params:die,slave,top_id,block_idx,cfg,EW,idx_iter,readout
+PRTN_INFO (2025-10-12 10:47:12.544264): TCA_Naknik_output:0,3,0,2,30,1,1,b604000c1e400ea8729c000000040000000800300600400c83c0c0000c0ea8729c24028022a0050158377e043c3c43cfde7803d33e9fc034592ef47ebcbcfff3af28dffcecd463ff3af517ffcebcc43ff366e91ffcc9ad1bff366c48ffcc8a7b3ff3b3784ffeeddf9bffb1e9cdffcebdb5fffbb77e9ffeebd0d7ff3af3ecffcebdc93ffb6af6bffcebd073ff3af375ffceabbc3ff3af4faffcebce27ff3af4aaffcc8a537ff36f0a9ffcecdf03ffba716cffcdac013ff3ab0bcffcebc377ff3af4cfffcebcf77ff36af81ffceabe4bff3ab15effcd9b76bff366bc2ffcc9a5cbff3af381ffceac23fff3af524ffceac71bff366efcffceac5abff3af405ffceac17bff3af5a1ffcc7a8cbff366d6effcd8ae4bff3ab0e8ffcebcd83ff3b373effcdab7c3ff3b3791ffed9ae27ff3af5b0ffceac567ff366cd6ffcd9b81fff322a3affcd9b29fff36af3affc0f00000083c0000020f00000083c0000020f00000083c0000020f0000008ba5de8e1e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000010780000041e0000010780000041e0000008780000041e00000118598c543c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f0000008c80b3e01a20d01cc2c04bffffb1aebee6
+PRTN_INFO (2025-10-12 10:47:12.770242): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:13.398214): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:13.997163): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:14.630589): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:15.367736): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:16.043528): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:16.759511): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:17.401604): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:18.160483): Expected and got 13 entries in fifo
+PRTN_INFO (2025-10-12 10:47:18.551985): TCA_Naknik_params:die,slave,top_id,block_idx,cfg,EW,idx_iter,readout
+PRTN_INFO (2025-10-12 10:47:18.556071): TCA_Naknik_output:0,3,0,3,30,1,1,b604000c1e400ea8729c000000040000000800300600400c83c0c0000c0ea8729c24028032a0050158377e043c3c43cfde7803d33e9fc034592ef47d8b83bff3ab0d2ffcebd623ff3a6f62ffce9c27bff322af9ffcd8b113ff366d91ffceac6a3ff3b37eeffed9c32bff3af69affcebddbbff366e03ffcebde5bffb62b80ffcebd4dbff3a70beffcd9bb9bff3ab074ffcd9b6fbff3a6ff0ffce9c36fff3af5fcffcebd93fff3ab41cffceac7a7ff362f10ffcd9b4dbff3af5e5ffcebce27ff3af791ffed9b5c7ff3ab7b0ffec8ac73ff3b77f1ffeebcdb7ff3af798ffed8b3d3ff3af6c0ffcecdf9bffbab3b8ffcd9b07bff3a6e86ffcd9b28bff3b62819deb799cfff3ab044ffceac9bbff3ab10cffceac9bfff3ab29affceac06bff3af525ffceacfb3ff366d81ffcd9b97bff3ab605ffceabef3ff322b43ffcd9b993ff366d8affcc8a9bfff3af5b2ffc0f00000083c0000020f00000083c0000020f00000083c0000020f0000008ba5de8e1e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000010780000041e0000010780000041e0000008780000041e00000118598c543c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f0000008c80b3e01a20a01c82c04bfffff0701a58
+Became_busy before Start :  0x0000000f
+PRTN_INFO (2025-10-12 10:47:18.906620): Stop TCA measure
+PRTN_INFO (2025-10-12 10:47:18.920692): Writing to TCA unit config_reg 23 val = 0x2effff
+PRTN_INFO (2025-10-12 10:47:18.920692): Stop TCA measure
+PRTN_INFO (2025-10-12 10:47:18.936469): Writing to TCA unit config_reg 23 val = 0x6effff
+PRTN_INFO (2025-10-12 10:47:18.936469): Stop TCA measure
+PRTN_INFO (2025-10-12 10:47:18.968088): Writing to TCA unit config_reg 23 val = 0xaeffff
+PRTN_INFO (2025-10-12 10:47:18.971346): Stop TCA measure
+PRTN_INFO (2025-10-12 10:47:18.983882): Writing to TCA unit config_reg 23 val = 0xeeffff
+PRTN_INFO (2025-10-12 10:47:19.156879): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:19.790430): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:20.407517): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:21.052700): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:21.749374): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:22.477842): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:23.213096): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:23.919516): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:24.662256): Expected and got 13 entries in fifo
+PRTN_INFO (2025-10-12 10:47:25.043226): TCA_Naknik_params:die,slave,top_id,block_idx,cfg,EW,idx_iter,readout
+PRTN_INFO (2025-10-12 10:47:25.049230): TCA_Naknik_output:0,3,0,0,30,1,2,b604000c1e400ea8729c000000040000000800300600400c83c0c0000c0ea8729c24028002a0050158377e043c3c43cfde7803d33e9fc034592ef47d7b02bff35ed7affcecd343ffbaf625ffee9cf9bff3a30bfffce9d417ff3a3358ffce8c0efff3ab777ffeeadd2fffba324fffcecda2bffbab776ffeeadb4bffba73ffffce7bd7fff3b36b5ffee9de27ffba7537ffce9d16bff3b3720ffeeaddf3ffbaf5ceffeebcfb3ffba73eaffceadbc3ffbaf4c5ffee9db5bff3a75b6ffceadd1bffba30fdffcebd277ffbb3622ffeebd53fffba76edffeeadcfbffba3184ffceadcebffbb3446ffeeadd8bffbb341fffeebd49fffbaf45fffeeadc5bff3a7239ffcd7ae4bff3af59fffee9d313ff3a74edffce8d0a7ff3a336cffce9d213ff3a7500ffcecd267ffba3126ffceadd83ffb5eca9ffce8cb63ff3ab790ffee9d717ff3a7403ffceadd6bffbab76effc0f00000083c0000020f00000083c0000020f00000083c0000020f0000008ba5de8e1e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000010780000041e0000010780000041e0000008780000041e00000118598c543c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f0000008c80b3e01a20d81cc2c04bffff7472fd09
+PRTN_INFO (2025-10-12 10:47:25.261896): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:25.876395): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:26.541949): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:27.253210): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:27.947276): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:28.628074): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:29.323526): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:30.060801): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:30.819843): Expected and got 13 entries in fifo
+PRTN_INFO (2025-10-12 10:47:31.211823): TCA_Naknik_params:die,slave,top_id,block_idx,cfg,EW,idx_iter,readout
+PRTN_INFO (2025-10-12 10:47:31.216211): TCA_Naknik_output:0,3,0,1,30,1,2,b604000c1e400ea8729c000000040000000800300600400c83c0c0000c0ea8729c24028012a0050158377e043c3c43cfde7803d33e9fc034592ef47e9cf3fff3af7b0ffeecde5fffba73c4ffce9cd17ff3a7466ffceade1bffba73c4ffce9d48fff3a750effcead4c7ff3af7c7ffeebdf8bffbab735ffce9d253ff3a31a5ffce9ccafff3af7e3ffeeadb0fff3ab784ffeeadf13ffba737affcead8b7ff3a328bffce9d817ff3ab7b4ffee9d80bff3a750fffcebdf77ffba71cfffce8c2cfff3ab7ceffeebdf8fffb5eccbffceadeafffba2facffcd7b527ff3a3155ffceada07ff362e66ffceade37ff31ea7cffce9cb23ff35ed8dffce9d7a7ff362da9ffcc6a413ff3ab7b9ffeebdf97ffbab757ffcead893ff3ab6eaffee9d2abff3a754bffce8c1bfff3ab783ffee9ce67ff35aae7ffcc69e27ff3a32c1ffcd7aea7ff362ef6ffce9d00fff3ab758ffc0f00000083c0000020f00000083c0000020f00000083c0000020f0000008ba5de8e1e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000010780000041e0000010780000041e0000008780000041e00000118598c543c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f0000008c80b3e01a20b81cc2c04bffff674be3b1
+PRTN_INFO (2025-10-12 10:47:31.440921): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:32.054507): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:32.662475): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:33.339271): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:34.037649): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:34.710491): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:35.421933): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:36.136777): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:36.830496): Expected and got 13 entries in fifo
+PRTN_INFO (2025-10-12 10:47:37.170070): TCA_Naknik_params:die,slave,top_id,block_idx,cfg,EW,idx_iter,readout
+PRTN_INFO (2025-10-12 10:47:37.186678): TCA_Naknik_output:0,3,0,2,30,1,2,b604000c1e400ea8729c000000040000000800300600400c83c0c0000c0ea8729c24028022a0050158377e043c3c43cfde7803d33e9fc034592ef47ebccbfff3ab29effcecd373ff3af4eeffcebcc53ff3a6e7bffcc9aeabff366c76ffcc8a7ffff3b37abffeeddf97ffb22a32ffcebdbc3ff3b77e6ffeebd1d7ff3af41cffcecdd73ff36af33ffcebd0f7ff3af398ffceabc3bff3af510ffcebceb7ff3af4f3ffcc9a5c7ff36f0deffcecdf57ffbab1a0ffcdac05bff3ab119ffceac3f3ff3af4d9ffcebd0a3ff36afbaffceabf03ff3ab122ffcd9b797ff366bedffcc9a6e7ff3af394ffceac3cfff3af555ffceac8cbff366f27ffceac563ff3af406ffceac357ff3af58effcc8a8ebff366d86ffcd9af1fff3ab0f3ffcebcdc7ff3b375fffcdab71fff3b3790ffed9af1fff3af60fffceac78fff366d30ffcd9b8ebff322a30ffcdab557ff36af2affc0f00000083c0000020f00000083c0000020f00000083c0000020f0000008ba5de8e1e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000008780000021e0000010780000041e0000010780000041e0000008780000041e00000118598c543c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f00000083c0000020f0000008c80b3e01a20d01cc2c04bffff9d67962e
+PRTN_INFO (2025-10-12 10:47:37.414233): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:38.036705): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:38.633032): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:39.280234): Expected and got 31 entries in fifo
+PRTN_INFO (2025-10-12 10:47:39.974191): Expected and got 31 entries in fifo

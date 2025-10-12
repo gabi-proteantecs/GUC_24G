@@ -1752,7 +1752,8 @@ class UCIe_2p5D:
         self.prtn_tca_unit_reg_cfg(
             block_idx, 10, ((tca_inter_reg_addr & 0x1F) << 10) | 0x3FF
         )
-        self.prtn_tca_unit_reg_cfg(block_idx, 17, tca_inter_reg_data)
+        self.prtn_tca_unit_reg_cfg(block_idx, 17, tca_inter_reg_data | 0x2)
+        # self.prtn_tca_unit_reg_cfg(block_idx, 17, tca_inter_reg_data) # old
 
     def prtn_tca_read_measure_en(self, block_idx):
         self.prtn_tca_unit_reg_cfg(block_idx, 29, (3 << 2))
@@ -1772,7 +1773,7 @@ class UCIe_2p5D:
 
     def prtn_config_block(self, block_idx, base_delay, EW):
         tca_inter_reg_addr = 6
-        tca_inter_reg_data = ((base_delay & 0x1F) << 3) | 0x2
+        tca_inter_reg_data = (base_delay & 0x1F) << 3
         self.prtn_tca_internal_reg_cfg(
             block_idx, tca_inter_reg_addr, tca_inter_reg_data
         )
